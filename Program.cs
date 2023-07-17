@@ -23,7 +23,7 @@ namespace Assignment_8
             MonthSalary monthlySalary = new MonthSalary();
 
             string typeOfEmployee;
-            Console.WriteLine("Enter employee type: \n 1 for HR \n 2 for Admin \n 3 for Software Developer");
+            Console.WriteLine("Enter employee type: \n HR for HR \n Admin for Admin \n SD for Software Developer");
             typeOfEmployee = (Console.ReadLine());
 
             int workingHour, noOfWorkingDAys, projectHandles, extras;
@@ -36,11 +36,9 @@ namespace Assignment_8
 
                     Console.WriteLine("Enter no. of Working Days");
                     noOfWorkingDAys = int.Parse(Console.ReadLine());
+                  
 
-                    projectHandles = 1;
-                    extras = 0;
-
-                    Console.WriteLine("Monthly Salary for HR is " + monthlySalary.SalaryCalc(workingHour, noOfWorkingDAys, projectHandles, extras));
+                    Console.WriteLine("Monthly Salary for HR is " + monthlySalary.SalaryCalc(workingHour, noOfWorkingDAys));
                     break;
 
                 case "Admin":
@@ -50,12 +48,11 @@ namespace Assignment_8
                     Console.WriteLine("Enter no. of Working Days for Admin");
                     noOfWorkingDAys = int.Parse(Console.ReadLine());
 
-                    
-                    extras = 0;
+                    Console.WriteLine("Enter no. of Project Handles");
+                    projectHandles = int.Parse(Console.ReadLine());
 
 
-
-                    Console.WriteLine("Monthly Salary for Admin is " + monthlySalary.SalaryCalc( workingHour, noOfWorkingDAys, extras));
+                    Console.WriteLine("Monthly Salary for Admin is " + monthlySalary.SalaryCalc( workingHour, noOfWorkingDAys, projectHandles));
                     break;
 
 
