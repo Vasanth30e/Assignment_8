@@ -34,7 +34,7 @@ namespace Assignment_8
                     Console.WriteLine("Enter no. of Working Hour");
                     workingHour = int.Parse(Console.ReadLine());    
 
-                    Console.WriteLine("Enter no. of Working Days");
+                    Console.WriteLine("Enter no. of Working Days for month");
                     noOfWorkingDAys = int.Parse(Console.ReadLine());
                   
 
@@ -42,10 +42,10 @@ namespace Assignment_8
                     break;
 
                 case "Admin":
-                    Console.WriteLine("Enter no. of Working Hour for Admin ");
+                    Console.WriteLine("Enter no. of Working Hour ");
                     workingHour = int.Parse(Console.ReadLine());
 
-                    Console.WriteLine("Enter no. of Working Days for Admin");
+                    Console.WriteLine("Enter no. of Working Days for month");
                     noOfWorkingDAys = int.Parse(Console.ReadLine());
 
                     Console.WriteLine("Enter no. of Project Handles");
@@ -61,7 +61,7 @@ namespace Assignment_8
                     Console.WriteLine("Enter no. of Working Hour");
                     workingHour = int.Parse(Console.ReadLine());
 
-                    Console.WriteLine("Enter no. of Working Days");
+                    Console.WriteLine("Enter no. of Working Days for month");
                     noOfWorkingDAys = int.Parse(Console.ReadLine());
 
                     Console.WriteLine("Enter no. of Project Handles");
